@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/first_fragment"
+    >
+
+
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="com.lighteast.khataab.navigation_drawer_example.Fragment_A"
+        android:label="First Fragment"
+        >
+        <action android:id="@+id/go_from_first_to_second"
+            app:destination="@+id/second_fragment"/>
+    </fragment>
+    <fragment android:id="@+id/second_fragment"
+        android:name="com.lighteast.khataab.navigation_drawer_example.Fragement_B"
+        android:label="Second Fragment"
+        >
+        <action android:id="@+id/go_from_second_to_third"
+            app:destination="@+id/third_fragment"/>
+    </fragment>
+    <fragment android:id="@+id/third_fragment"
+        android:name="com.lighteast.khataab.navigation_drawer_example.Third_Fragment"
+        android:label="Third Fragment"
+        />
+
+
+</navigation>
